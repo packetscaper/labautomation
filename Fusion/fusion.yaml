@@ -1,0 +1,20 @@
+---
+
+underlay:
+  -hostname:
+
+
+  -vlan:
+
+
+
+  -interface:
+   ip_address:
+   description:
+
+  -interface:
+   ip_address:
+   description:
+
+
+bgp:
