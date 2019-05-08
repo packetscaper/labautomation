@@ -1,0 +1,6 @@
+---
+ base_provider:
+   username: admin
+   password:ntc123
+   host:"{{inventory_hostname}}"
+
