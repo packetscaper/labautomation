@@ -1,0 +1,47 @@
+---
+    vlans:
+     - 10
+     - 11
+     - 12
+     - 20
+     - 11
+
+
+    L3interfaces :
+      - name : 10
+        ip : 10.10.2.5/30
+        description: Connection to BR1
+      - name : 11
+        ip: 10.10.2.9/30
+        description: Connection to Br2
+      - name : 12
+        ip : 10.10.2.70/30
+        description: Connection to ISE/AD
+      - name : 109
+        ip :  10.25.3.109/30
+        description: Connection to DNAC
+      - name : 200
+        ip : 10.25.3.225/30
+        description: Out of Band Management
+      - name : 114
+        ip: 10.25.2.25/30
+        description: Connection to WLC
+
+
+    L2interfaces:
+
+       - name : Gi0/0/1
+         mode : trunk
+         description: Connection BR1
+
+       - name: Gi0/0/0
+         mode : trunk
+         description: Connection to BR2
+
+       - name: Gi0/1/1
+         mode : trunk
+         description : Connection to WLC
+
+    isis:
+     - vlan70
+     - vlan70

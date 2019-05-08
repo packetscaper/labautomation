@@ -1,0 +1,6 @@
+---
+ base_provider:
+   username: admin
+   password: cisco 
+   host: "{{inventory_hostname}}"
+

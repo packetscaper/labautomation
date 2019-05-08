@@ -1,0 +1,13 @@
+---
+
+ - name: Play 1 - Generate Underlay Fusion Configuration
+   connection: local
+   hosts: fusion
+   gather_facts: no
+
+   tasks:
+    - name : Generate for Fusion
+      template :
+       src: ./templates/underlay.j2
+       dest: ./configs/fusion_underlay.cfg
+       

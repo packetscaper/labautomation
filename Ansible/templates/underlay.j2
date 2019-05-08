@@ -1,0 +1,37 @@
+{%for vlan in vlans%}
+
+vlan {{vlan}}
+
+{%endfor%}
+
+
+
+{%for interface in L3interfaces%}
+
+int {{interface.name}}
+description {{interface.description}}
+ip {{interface.ip}}
+
+{%endfor%}
+
+
+{%for interface in L2interfaces%}
+
+int {{interface.name}}
+description {{interface.description}}
+switchport mode {{interface.mode}}
+
+{%endfor%}
+
+router isis
+ net 49.0000.0000.0000.5555.00
+ metric-style wide
+ default-information originate
+
+
+{%for interface in isis%}
+
+interface {{interface}}
+ip router-isis
+
+{%endfor%}
