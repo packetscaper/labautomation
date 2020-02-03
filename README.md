@@ -1,6 +1,6 @@
 # Lab Automation
 
-Experimental project to automate re-initialization of Cisco lab devices using various automation tools and utilities
+Experimental project to automate re-initialization of a Cisco SDA lab device using various automation tools and utilities
 
 
 ### Prerequisites
